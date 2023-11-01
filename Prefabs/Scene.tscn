@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://cka58gf73t72r"]
+
+[ext_resource type="Script" path="res://Prefabs/Scene.gd" id="1_akgg8"]
+
+[sub_resource type="Gradient" id="Gradient_hwnjb"]
+colors = PackedColorArray(0.733333, 1, 1, 1, 0.733333, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_p7q0k"]
+gradient = SubResource("Gradient_hwnjb")
+width = 640
+
+[node name="Scene" type="Node2D"]
+script = ExtResource("1_akgg8")
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(320, 241)
+scale = Vector2(1.03438, 508)
+texture = SubResource("GradientTexture1D_p7q0k")
